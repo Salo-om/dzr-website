@@ -8,6 +8,7 @@ body {
     scroll-behavior: smooth;
     background-color: #333;
     color: #fff;
+    overflow-x: hidden;
 }
 
 body > header {
@@ -74,6 +75,7 @@ a {
 video {
     max-height: 100%;
     min-width: 100%;
+    display: block;
     object-fit: cover;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
