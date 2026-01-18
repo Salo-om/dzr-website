@@ -11,10 +11,20 @@ body {
     overflow-x: hidden;
 }
 
+.whatsapp__popup {
+    position: fixed;
+    background-color: #000;
+    padding: .9em;
+    border-radius: 100vw;
+    width: 80px;
+    height: 80px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 20;
+}
+
 body > header {
     min-height: 100vh;
-    
-    
 }
 
 nav {
@@ -101,7 +111,7 @@ video {
 }
 
 h1.hero__title {
-    font-family: "oswald";
+    font-family: "Meltland";
     color: #fff;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
 }
@@ -153,7 +163,8 @@ h1.hero__title {
 .footer__header {
     margin-bottom: 5rem;
     font-size: 42px;
-    font-family: "Oswald";
+    font-family: "Meltland";
+    font-weight: 100;
 }
 
 .features__container .feature {
@@ -161,7 +172,7 @@ h1.hero__title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 0  20px rgba(249, 27, 27, 0.3);
+    box-shadow: 0 0 20px rgba(249, 27, 27, 0.3);
     transition: all .4s ease;
     cursor: pointer;
 }
@@ -298,6 +309,10 @@ footer .links__container {
 
     footer ul {
         flex-wrap: wrap;
+    }
+
+    .hero__header {
+        padding: 2em;
     }
 
     .links__icon {
