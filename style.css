@@ -304,7 +304,7 @@ footer .links__container {
         display: block;
     }
 
-    .gallery {
+    section.gallery {
         padding: 4em !important;
     }
 
