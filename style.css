@@ -126,7 +126,7 @@ h1.hero__title {
     font-weight: 700;
     color: #fff;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
-    font-size: 36px;
+    font-size: 42px;
 }
 
 .cta {
@@ -175,7 +175,7 @@ h1.hero__title {
 .statement .statement__header,
 .footer__header {
     margin-bottom: 5rem;
-    font-size: 32px;
+    font-size: 36px;
     font-family: "Meltland";
 }
 
@@ -342,5 +342,16 @@ footer .links__container {
 
     section h2 {
         font-size: 36px !important;
+    }
+
+    h1.hero__title {
+        font-size: 36px;
+    }
+
+    .features .features__header,
+    .gallery .gallery__header,
+    .statement .statement__header,
+    .footer__header {
+        font-size: 28px;
     }
 }
