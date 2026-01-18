@@ -191,7 +191,7 @@ h1.hero__title {
 
 .gallery .gallery__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
     grid-auto-rows: 200px;
     gap: 40px 20px;
     margin-bottom: 4rem;
