@@ -41,7 +41,7 @@ body > header {
 nav {
     position: sticky;
     top: 0;
-    background-color: #2e1616;
+    background-color: #000;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -73,6 +73,10 @@ ul a {
 
 ul a:hover {
     color: #e5e5e5;
+}
+
+.logo {
+    padding-top: .8em;
 }
 
 .current__page {
