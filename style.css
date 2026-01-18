@@ -305,7 +305,7 @@ footer .links__container {
     }
 
     section.gallery {
-        padding: 4em !important;
+        padding: 4em 3em!important;
     }
 
     .statement .statement__container {
