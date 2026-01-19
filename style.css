@@ -18,6 +18,16 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "IntegralCF";
+    src:
+        url("fonts/IntegralCFRegular.woff2") format("woff2"),
+        url("fonts/IntegralCFRegular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -134,7 +144,7 @@ video {
 }
 
 h1.hero__title {
-    font-family: "Ethnocentric";
+    font-family: "IntegralCF";
 
     color: #fff;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
@@ -188,7 +198,7 @@ h1.hero__title {
 .footer__header {
     margin-bottom: 5rem;
     font-size: 32px;
-    font-family: "Ethnocentric";
+    font-family: "IntegralCF";
 }
 
 .features__container .feature {
