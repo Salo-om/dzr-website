@@ -200,13 +200,24 @@ h1.hero__title {
     font-family: "IntegralCF";
 }
 
+.features .features__header {
+    transform: translateY(50%);
+    opacity: 0;
+    transition: all .8s ease;
+}
+
+.features .features__header.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 .features__container .feature {
     padding: 1.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: 0 0 16px rgba(255, 97, 97, .55);
-    transition: all .6s ease;
+    transition: all .8s ease;
     translate: -50%;
     cursor: pointer;
     background-color: #d30000;

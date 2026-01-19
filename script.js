@@ -10,5 +10,6 @@ const observer = new IntersectionObserver((entries) => {
     })
 }, {});
 
-const feature = [...document.getElementsByClassName("feature")];
+const heading = document.getElementById("header");
+const feature = [heading, ...document.getElementsByClassName("feature")];
 feature.forEach((el) => observer.observe(el));
