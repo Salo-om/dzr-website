@@ -189,8 +189,7 @@ h1.hero__title {
     box-shadow: 0 0 20px rgba(249, 27, 27, 0.3);
     transition: all .4s ease;
     cursor: pointer;
-    color: #000;
-    background-color: #fff;
+    background-color: #c04b4b;
     border-radius: 1rem;
 }
 
@@ -211,7 +210,6 @@ h1.hero__title {
 
 .feature .feature__paragraph {
     font-family: "Montserrat";
-    color: #000;
 }
 
 .gallery {
