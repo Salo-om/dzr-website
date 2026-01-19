@@ -8,6 +8,16 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "Ethnocentric";
+    src:
+        url("fonts/Ethnocentric-Regular.woff2") format("woff2"),
+        url("fonts/Ethnocentric-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -124,11 +134,11 @@ video {
 }
 
 h1.hero__title {
-    font-family: "Meltland";
-    font-weight: 700;
+    font-family: "Ethnocentric";
+
     color: #fff;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
-    font-size: 42px;
+    font-size: 38px;
 }
 
 .cta {
@@ -177,8 +187,8 @@ h1.hero__title {
 .statement .statement__header,
 .footer__header {
     margin-bottom: 5rem;
-    font-size: 36px;
-    font-family: "Meltland";
+    font-size: 32px;
+    font-family: "Ethnocentric";
 }
 
 .features__container .feature {
@@ -329,7 +339,7 @@ footer .links__container {
     }
 
     .hero__header {
-        padding: 2em;
+        padding: 3em 1.5em;
     }
 
     .links__icon {
@@ -346,11 +356,11 @@ footer .links__container {
     }
 
     section h2 {
-        font-size: 36px !important;
+        font-size: 30px !important;
     }
 
     h1.hero__title {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .features .features__header,
