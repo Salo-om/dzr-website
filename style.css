@@ -78,7 +78,7 @@ ul a:hover {
 
 
 .current__page {
-    color: #e5e5e5;
+    color: #939393;
 }
 
 a {
@@ -186,10 +186,10 @@ h1.hero__title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 0 20px rgba(249, 27, 27, 0.3);
+    box-shadow: 0 0 16px rgba(255, 97, 97, .55);
     transition: all .4s ease;
     cursor: pointer;
-    background-color: #c04b4b;
+    background-color: #ff6161;
     border-radius: 1rem;
 }
 
@@ -265,7 +265,7 @@ img {
 .brand__statement {
     text-align: start;
     font-family: "Montserrat";
-    color: #e5e5e5;
+    color: #e2e2e2;
     font-style: italic;
 }
 
