@@ -78,7 +78,7 @@ ul a:hover {
 
 
 .current__page {
-    color: #e5b5b5;
+    color: #e5e5e5;
 }
 
 a {
@@ -181,10 +181,6 @@ h1.hero__title {
     font-family: "Meltland";
 }
 
-.feature {
-    background-color: rgb(94, 44, 44);
-}
-
 .features__container .feature {
     padding: 1.5em;
     display: flex;
@@ -193,6 +189,9 @@ h1.hero__title {
     box-shadow: 0 0 20px rgba(249, 27, 27, 0.3);
     transition: all .4s ease;
     cursor: pointer;
+    color: #000;
+    background-color: #fff;
+    border-radius: 1rem;
 }
 
 .features__container .feature:hover {
@@ -212,7 +211,7 @@ h1.hero__title {
 
 .feature .feature__paragraph {
     font-family: "Montserrat";
-    color: #e5e5e5;
+    color: #000;
 }
 
 .gallery {
