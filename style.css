@@ -47,6 +47,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0 2em;
+    padding-left: 0;
     height: 12vh;
     z-index: 10;
 }
@@ -180,6 +181,10 @@ h1.hero__title {
     font-family: "Meltland";
 }
 
+.feature {
+    background-color: rgb(94, 44, 44);
+}
+
 .features__container .feature {
     padding: 1.5em;
     display: flex;
@@ -196,6 +201,8 @@ h1.hero__title {
 
 .feature .feature__img {
     margin-bottom: 1rem;
+    height: 100%;
+    width: 60px;
 }
 
 .feature .feature__title {
