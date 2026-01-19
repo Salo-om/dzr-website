@@ -1,7 +1,6 @@
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            console.log(entry.target)
             entry.target.classList.add("show");
         }
         else {
@@ -10,6 +9,7 @@ const observer = new IntersectionObserver((entries) => {
     })
 }, {});
 
-const heading = document.getElementById("header");
-const feature = [heading, ...document.getElementsByClassName("feature")];
-feature.forEach((el) => observer.observe(el));
+const heading = document.getElementsByClassName("features__header");
+const feature = document.getElementsByClassName("feature");
+const elements = [...heading,...feature];
+elements.forEach((el) => observer.observe(el));

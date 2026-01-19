@@ -94,6 +94,10 @@ a {
     position: relative;
 }
 
+img {
+    display: block;
+}
+
 video {
     position: absolute;
     inset: 0;
@@ -147,31 +151,58 @@ h1.hero__title {
     background-color: #931b1b;
 }
 
-.hero__paragraph {
-    font-family: "Montserrat";
-    color: #e5e5e5;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
-}
-
-.features {
+.features,
+.graphics,
+.photography,
+.videography {
     min-height: 50vh;
     padding: 4em;
     text-align: center;
     background-color: #000;
 }
 
-.features .features__container {
+.features {
+    padding: 4em 0;
+}
+
+section.photography,
+section.videography {
+    padding: 4em 0 !important;
+}
+
+.features .features__container,
+.graphics .graphics__container,
+.photography .photography__container,
+.videography .videography__container {
     display: grid;
     grid-auto-flow: row;
     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-    gap: 120px 40px;
+    grid-auto-rows: 200px;
+    gap: 80px;
     margin-bottom: 20px;
 }
 
-.features .features__header {
+.photography .photography__container,
+.videography .videography__container {
+    grid-template-columns: 1fr;
+    gap: 80px;
+}
+
+.features .features__header,
+.graphics .graphics__header,
+.photography .photography__header,
+.videography .videography__header {
     margin-bottom: 5rem;
     font-size: 32px;
     font-family: "IntegralCF";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+main > .features > .features__header {
+    font-size: 48px;
 }
 
 .features .features__header {
@@ -185,11 +216,7 @@ h1.hero__title {
     opacity: 1;
 }
 
-.features__container .feature {
-    padding: 1.5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.feature {
     box-shadow: 0 0 16px rgba(255, 97, 97, .55);
     transition: all .8s ease;
     translate: -50%;
@@ -204,7 +231,7 @@ h1.hero__title {
     translate: 0;
 }
 
-.features__container .feature:hover {
+.graphics .feature:hover {
     transform: scale(1.05);
 }
 
@@ -214,13 +241,12 @@ h1.hero__title {
     width: 60px;
 }
 
-.feature .feature__title {
-    font-family: "inter";
-    margin-bottom: .8rem;
-}
-
-.feature .feature__paragraph {
-    font-family: "Montserrat";
+.graphics__container .graphic,
+.photography__container .photo,
+.videography__container .video {
+    width: 100%;
+    height: 100%;
+    background-color: #931b1b;
 }
 
 
@@ -250,7 +276,15 @@ h1.hero__title {
         font-size: 32px;
     }
 
+    main > .features > .features__header {
+        font-size: 42px !important;
+    }
+
     .features .features__header {
         font-size: 28px;
+    }
+
+    .graphics .graphics__header {
+        gap: 10px;
     }
 }
