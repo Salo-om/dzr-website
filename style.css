@@ -8,6 +8,15 @@
     font-display: swap;
 }
 
+:root {
+    --primary-red: #d30000;
+    --primary-black: #000;
+    --primary-white: #fff;
+    --secondary-red: #ff6161;
+    --secondary-black: #939393;
+    --secondary-white: #e2e2e2;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -56,7 +65,6 @@ nav ul {
     display: flex;
     gap: 30px;
     list-style: none;
-    
 }
 
 nav ul a {
@@ -154,7 +162,8 @@ h1.hero__title {
 .features,
 .graphics,
 .photography,
-.videography {
+.videography,
+.pricing {
     min-height: 50vh;
     padding: 4em;
     text-align: center;
@@ -191,7 +200,8 @@ section.videography {
 .features .features__header,
 .graphics .graphics__header,
 .photography .photography__header,
-.videography .videography__header {
+.videography .videography__header,
+.pricing .pricing__header {
     margin-bottom: 5rem;
     font-size: 32px;
     font-family: "IntegralCF";
@@ -249,6 +259,92 @@ main > .features > .features__header {
     background-color: #931b1b;
 }
 
+.pricing .pricing__header {
+    margin-bottom: 1.5rem;
+}
+
+.pricing .pricing__paragraph {
+    margin-bottom: 60px;
+    font-family: "inter";
+    color: #e2e2e2;
+}
+
+.pricing .schedule {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #9c3737;
+    margin-bottom: 80px;
+    border-radius: 1rem;
+}
+
+.schedule .schedule__header,
+.pricing__container .item__header {
+    font-family: "IntergalCF";
+    font-size: 24px;
+}
+
+.schedule .cta__button {
+    border-radius: 100vw;
+}
+
+.pricing .pricing__container {
+    background-image: linear-gradient(to bottom, var(--secondary-red), var(--primary-red));
+    padding: 2em;
+    border-radius: 1rem;
+}
+
+.pricing__container .item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item .item__paragraph {
+    font-family: "inter";
+    color: #e2e2e2;
+}
+
+.item ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+}
+
+.item ul li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.item .cta__button {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 100vw;
+    padding: 1em 2em;
+}
+
+.item .cta__button:hover,
+.schedule .cta__button:hover {
+    scale: 1.05;
+}
+
+.item .cta__button .price__span {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.item .cta__button .price__span span {
+    font-size: 12px;
+    align-self: flex-end;
+    padding-bottom: 4px;
+    font-weight: 400;
+}
 
 @media (max-width: 750px) {
     .cta {
@@ -286,5 +382,13 @@ main > .features > .features__header {
 
     .graphics .graphics__header {
         gap: 10px;
+    }
+
+    .item ul {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing {
+        padding: 4em 2em;
     }
 }
