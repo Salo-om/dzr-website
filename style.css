@@ -281,7 +281,7 @@ main > .features > .features__header {
 
 .schedule .schedule__header,
 .pricing__container .item__header {
-    font-family: "IntergalCF";
+    font-family: "IntegralCF";
     font-size: 24px;
 }
 
@@ -328,7 +328,7 @@ main > .features > .features__header {
 
 .item .cta__button:hover,
 .schedule .cta__button:hover {
-    scale: 1.05;
+    scale: 1.015;
 }
 
 .item .cta__button .price__span {
