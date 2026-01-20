@@ -274,7 +274,7 @@ main > .features > .features__header {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    background-image: linear-gradient(in oklab to bottom, var(--secondary-red), var(--primary-red));
+    background-image: linear-gradient(in oklch to bottom, var(--secondary-red), var(--primary-red));
     margin-bottom: 80px;
     border-radius: 1rem;
 }
