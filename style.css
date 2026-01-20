@@ -274,7 +274,7 @@ main > .features > .features__header {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    background-color: #9c3737;
+    background-image: linear-gradient(to bottom, var(--secondary-red), var(--primary-red));
     margin-bottom: 80px;
     border-radius: 1rem;
 }
