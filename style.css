@@ -163,7 +163,8 @@ h1.hero__title {
 .graphics,
 .photography,
 .videography,
-.pricing {
+.pricing,
+.faq {
     min-height: 50vh;
     padding: 4em;
     text-align: center;
@@ -201,7 +202,8 @@ section.videography {
 .graphics .graphics__header,
 .photography .photography__header,
 .videography .videography__header,
-.pricing .pricing__header {
+.pricing .pricing__header,
+.faq .faq__header {
     margin-bottom: 5rem;
     font-size: 32px;
     font-family: "IntegralCF";
@@ -290,7 +292,7 @@ main > .features > .features__header {
 }
 
 .pricing .pricing__container {
-    background-image: linear-gradient(to bottom, var(--secondary-red), var(--primary-red));
+    background-image: linear-gradient(in oklch to bottom, var(--secondary-red), var(--primary-red));
     padding: 2em;
     border-radius: 1rem;
 }
@@ -346,6 +348,63 @@ main > .features > .features__header {
     font-weight: 400;
 }
 
+.faq__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "inter";
+    border-radius: 1rem;
+    width: 100%;
+    background: linear-gradient(in oklab to bottom right, var(--secondary-red), var(--primary-red));
+    border: 2px solid var(--secondary-red);
+    overflow: hidden;
+}
+
+summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    text-align: start;
+    padding: 1em;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+summary::after {
+    content: "+";
+    font-size: 24px;
+}
+
+details[open] summary::after {
+    content: "-";
+}
+
+details::details-content {
+    block-size: 0;
+    transition: block-size .35s, content-visibility .35s;
+    transition-behavior: allow-discrete;
+}
+
+details[open]::details-content {
+    block-size: auto;
+}
+
+details > p {
+    padding-block: 1em;
+    padding: 1em;
+    color: var(--secondary-white);
+}
+
 @media (max-width: 750px) {
     .cta {
         flex-direction: column;
@@ -388,7 +447,8 @@ main > .features > .features__header {
         grid-template-columns: 1fr;
     }
 
-    .pricing {
+    .pricing,
+    .faq {
         padding: 4em 2em;
     }
 }
