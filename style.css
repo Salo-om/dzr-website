@@ -72,7 +72,7 @@ nav ul a {
 }
 
 ul a {
-    font-family: "inter";
+    font-family: "Inter";
     color: #fff;
     transition: color .4s ease;
     -webkit-user-select: none;
@@ -164,7 +164,8 @@ h1.hero__title {
 .photography,
 .videography,
 .pricing,
-.faq {
+.faq,
+.contact {
     min-height: 50vh;
     padding: 4em;
     text-align: center;
@@ -172,7 +173,8 @@ h1.hero__title {
 }
 
 .features {
-    padding: 4em 0;
+    padding: 0;
+    padding-block: 4em;
 }
 
 section.photography,
@@ -203,7 +205,8 @@ section.videography {
 .photography .photography__header,
 .videography .videography__header,
 .pricing .pricing__header,
-.faq .faq__header {
+.faq .faq__header,
+.contact .contact__header {
     margin-bottom: 5rem;
     font-size: 32px;
     font-family: "IntegralCF";
@@ -221,11 +224,17 @@ main > .features > .features__header {
     transform: translateY(50%);
     opacity: 0;
     transition: all .8s ease;
+    font-size: clamp(25px,calc(3vw + 1rem),32px);
 }
 
 .features .features__header.show {
     transform: translateY(0);
     opacity: 1;
+    
+}
+
+.features section.features__header.show {
+    font-size: clamp(25px,calc(3vw + 1rem),32px);
 }
 
 .feature {
@@ -309,6 +318,7 @@ main > .features > .features__header {
 }
 
 .item ul {
+    text-align: start;
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -337,12 +347,20 @@ main > .features > .features__header {
     display: flex;
     align-items: center;
     gap: 3px;
-    font-size: 24px;
+    font-size: clamp(16px,calc(1vw + 1rem),24px);
     font-weight: 700;
 }
 
+.item .cta__button .price__span img {
+    width: clamp(15px,calc(1vw + 1rem),20px);
+}
+
+.item .cta__button img {
+    width: clamp(15px,calc(1vw + 1rem),20px);
+}
+
 .item .cta__button .price__span span {
-    font-size: 12px;
+    font-size: clamp(6px,12px,12px);
     align-self: flex-end;
     padding-bottom: 4px;
     font-weight: 400;
@@ -426,8 +444,11 @@ details > p {
         display: block;
     }
 
+    .item .cta__button {
+        padding: 1em 1em;
+    }
 
-    section h2 {
+    main > section > h2 {
         font-size: 30px !important;
     }
 
@@ -439,8 +460,9 @@ details > p {
         font-size: 42px !important;
     }
 
-    .features .features__header {
-        font-size: 28px;
+    .features {
+        padding: 0;
+        padding-block: 4em;
     }
 
     .graphics .graphics__header {
