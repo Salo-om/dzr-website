@@ -508,7 +508,7 @@ footer .footer__container {
 }
 
 @media (max-width: 750px) {
-    .links {
+    nav ul.links {
         display: flex;
         position: absolute;
         flex-direction: column;
