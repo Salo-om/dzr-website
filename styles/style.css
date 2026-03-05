@@ -1,8 +1,8 @@
 @font-face {
     font-family: "IntegralCF";
     src:
-        url("/fonts/IntegralCFRegular.woff2") format("woff2"),
-        url("/fonts/IntegralCFRegular.woff") format("woff");
+        url("fonts/IntegralCFRegular.woff2") format("woff2"),
+        url("fonts/IntegralCFRegular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
