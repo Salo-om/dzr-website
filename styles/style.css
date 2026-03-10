@@ -97,6 +97,8 @@ a {
 
 .links__icon {
     display: none;
+    background-color: #000;
+    border: none;
 }
 
 .hero {
