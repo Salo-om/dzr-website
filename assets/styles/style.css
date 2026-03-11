@@ -472,11 +472,11 @@ footer .footer__container {
     transition: all .2s ease;
 }
 
-.footer__container .dzr__icon {
-    width: 360px;
-    position: absolute;
-    top: -30px;
-    left: -75px;
+.dzr__icon {
+  width: 145px;
+  position: absolute;
+  top: 52px;
+  left: 21px;
 }
 
 .dzr__icon img {
@@ -584,15 +584,4 @@ footer .footer__container {
     .faq {
         padding: 4em 2em;
     }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation: none !important;
-    transition: none !important;
-  }
-
-  html {
-    scroll-behavior: auto;
-  }
 }
